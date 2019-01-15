@@ -23,7 +23,10 @@ body {
 
     
 }
-
+[data-aos^=zoom][data-aos^=zoom].aos-animate.shape {
+    opacity: 1;
+    transform: translateZ(0) scale(1) rotate(-90deg);
+}
 .shape2 {
     position: relative;
     font-size: 60em;
@@ -36,6 +39,18 @@ body {
     
 }
 
+[data-aos^=fade][data-aos^=fade].aos-animate.shape2 {
+    opacity: 1;
+    transform: translateZ(0) scale(1) rotate(90deg);
+}
+.progress-bar [data-aos=fade-right] {
+    transform: scaleX(0);
+    transform-origin: left;
+    animation-delay:1s;
+}
+.progress-bar [data-aos^=fade][data-aos^=fade].aos-animate{
+    transform: scaleY(1);
+}
 /*____________________________HEADER-SECTION____________________________*/
 
 header {
