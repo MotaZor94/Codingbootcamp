@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: forestFont;
+    src: url("img/FromtheWoods-Regular.woff2");
+}
+body {
+    margin: 0;
+    
+}
+.container h1 ,
+header p,
+footer h3,
+footer p {
+    width: 70%;
+    margin: 0 auto;
+    
+}
+/*-----------header section here--------*/
+
+header {
+    background-image: url("img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -12em;
+    height: 37em;
+    width: 100%;
+}
+header h1 {
+    font-family: forestFont;
+    font-size: 8em;
+    text-align: center;
+    color: white;
+    padding-top: 0.8em;
+    
+}
+header p {
+    color: white;
+    font-size: 1.6em;
+    font-family: "Open sans", sans-serif;
+    font-weight: 600;
+    line-height: 1.3em;
+    text-align: center;
+    padding-top: 4em; 
+}
+/*-----------middle section here--------*/
+.bkg {
+    height: 18em;
+    background-image: url("img/bg.jpg");
+    background-size: cover;
+    background-position-y:-31em;;
+    width: 100%;
+
+}
+.middle h3 {
+    margin: 0;
+    font-size: 2em;
+    font-weight: 700;
+
+}
+.middle div {
+    background-color: #4f6a13;
+    border: 1px solid #4f6a13;
+    border-radius: 50%;
+    width: 450px;
+    height: 450px;
+    text-align: center;
+    padding-top: 50px;
+    color: white;
+    font-family: "Open sans", sans-serif;
+    
+}
+.middle article {
+    position: relative;
+    bottom: 80em;
+}
+.middle img {
+    width: 9em;
+    height: 9em;
+}
+
+.middle p {
+    width: 15em;
+    padding-top: 2.5em;
+    margin: 0 auto;
+}
+.circle1 {
+    margin-left: 17em;
+    position: relative;
+    top: 2em;
+}
+
+.circle2 {
+    margin-left: 48em;
+    position: relative;
+    bottom: 10em;
+    
+}
+.circle3 {
+    margin-left: 17em;
+    position: relative;
+    bottom: 22em;
+}
+footer {
+    background-color: #2D4823;
+    position: relative;
+    bottom: 93em;
+    text-align: center;
+    color: #D3D3D3;
+    height: 30em;
+    
+}
+footer h3 {
+    font-size: 2.5em;
+    padding-top: 2em;
+}
+footer p {
+    font-size: 1.8em;
+    padding-top: 1.3em;
+}
