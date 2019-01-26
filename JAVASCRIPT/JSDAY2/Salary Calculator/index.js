@@ -1,16 +1,13 @@
-let wage = document.querySelector("#wage");
-let hours = document.querySelector("#hours");
-let days = document.querySelector("#days");
 
 
 const salary = () => {
-    let money = wage.value;
-    let hrs = hours.value;
-    let day = days.value;
+    let money = document.querySelector("#wage");
+    let hrs = document.querySelector("#hours");
+    let day = document.querySelector("#days");
     let total = document.querySelector(".total");
     let message = document.querySelector(".msg");
-    let salary = money*hrs*day;
-    message.innerHTML = "Your salary is"
+    let salary = money.value*hrs.value*day.value;
+    message.innerHTML = "Your salary is";
     total.innerHTML = salary + "€";
 }
 
