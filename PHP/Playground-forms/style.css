@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.bg {
+    background-color: rgb(84, 117, 207);
+    width: 100vw;
+    height: 15em;
+    position: absolute;
+    bottom: 0;
+
+}
+
+h3 {
+    color: rgb(20, 72, 131);
+    font-size: 1.7em;
+    padding-left: 1em;
+   
+}
+
+p {
+    color: rgb(93, 176, 214);
+    font-size: 1.4em;
+    padding-left: 1.2em;
+    margin-top: -1em;
+
+}
+
+ol {
+    color: rgb(253, 252, 252);
+    font-size: 1em;
+    padding-left: 3.2em;
+}
+
+form {
+    position: absolute;
+    bottom: 0;
+    margin: 2em 40em;
+}
+
+.movie-name {
+    color: rgb(253, 252, 252);
+    position: absolute;
+    bottom: 4.5em;
+    left: -38em;
+
+}
+
+.rotten {
+    color: rgb(253, 252, 252);
+    position: absolute;
+    bottom: 3em;
+    left: -38em;
+
+}
+
+input {
+    border-radius: 0.3em;
+}
