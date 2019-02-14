@@ -1,26 +1,3 @@
-<?php require_once "Dice.php";
-
-$nr_of_dice = 1;
-
-if (isset($_GET['nr_of_dice'])) {
-    $nr_of_dice = $_GET['nr_of_dice'];
-}
-
-$nr_of_sides = 6;
-
-if (isset($_GET['nr_of_sides'])) {
-    $nr_of_dice = $_GET['nr_of_dice'];
-}
-
-$dice = [];
-
-for ($i = 0; $i < $nr_of_dice; $i++) {
-    $die = new Dice($nr_of_sides);
-    $die->roll();
-    $dice[] = $die;
-}
-
-?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -32,38 +9,27 @@ for ($i = 0; $i < $nr_of_dice; $i++) {
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/public/form.scss">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+        
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-
-        <form action="" method="get">
-        <input type="text" name ="nr_of_dice" value = <?=htmlspecialchars($nr_of_dice)?>>
-        <br>
-        <br>
-        <br>
-        <br>
-        <h2>How many dices do you want to roll?</h2>
-        <select name="nr_of_sides">
-            <option value="4"<?= $nr_of_sides == 4 ? ' selected' : '' ?>>4</option>
-            <option value="6"<?= $nr_of_sides == 6 ? ' selected' : '' ?>>6</option>
-            <option value="8"<?= $nr_of_sides == 8 ? ' selected' : '' ?>>8</option>
-            <option value="10"<?= $nr_of_sides == 10 ? ' selected' : '' ?>>10</option>
-            <option value="20"<?= $nr_of_sides == 20 ? ' selected' : '' ?>>20</option>
-        </select>
-
-        <input type="submit" value="roll the dice!">
-        </form>
-
-        <?php foreach ($dice as $die) : ?>
-
-            <?php echo $die; ?>
-
-        <?php endforeach; ?>
+       <!-- <form action="" method="post">
+        <h3>How many dice's do you wanna throw?</h3>
+        <br><input type="text" name="name" col="30" row="20"><br>
+        <input type="submit" value="submit">
+        </form>-->
+        <div class="center">
+        <div id="selector"></div>
+        <div id="myInput"></div>
+        </div>
         
-        <script src="" async defer></script>
+        
+
+        <script src="index.js" async defer></script>
     </body>
 </html>

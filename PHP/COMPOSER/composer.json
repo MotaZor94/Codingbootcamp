@@ -1,0 +1,12 @@
+{
+    "name": "markocolic/markocolic",
+    "authors": [
+        {
+            "name": "Marko Colic",
+            "email": "markocolic@Markos-MacBook-Pro.local"
+        }
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}
